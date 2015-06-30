@@ -1,0 +1,20 @@
+{
+  "name": "cweagans/podcastr",
+  "description": "A podcast downloader.",
+  "require": {
+    "symfony/console": "^2.7"
+  },
+  "license": "BSD",
+  "authors": [
+    {
+      "name": "Cameron Eagans",
+      "email": "me@cweagans.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"cweagans\\podcastr\\": "src"}
+  },
+  "bin": [
+    "podcastr"
+  ]
+}

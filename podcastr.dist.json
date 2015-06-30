@@ -1,0 +1,8 @@
+{
+  "feeds": {
+    "Title": "http://example.com/rss.xml"
+  },
+  "options": {
+    "download-location": "/home/youruser/Podcasts"
+  }
+}

@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+// No limit on memory usage. We're working with pretty big files sometimes.
+ini_set('memory_limit', '-1');
+
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+  require __DIR__ . '/vendor/autoload.php';
+}
+else {
+  require __DIR__ . '/../../autoload.php';
+}
+
+$app = new Symfony\Component\Console\Application('Podcastr', 'v1.0.0-dev');
+$app->add(new cweagans\podcastr\CreateConfigCommand());
+$app->add(new cweagans\podcastr\DownloadCommand());
+$app->run();
